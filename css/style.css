@@ -1,0 +1,252 @@
+#main {
+    transition: margin-left .5s;
+   
+}
+
+#welcome {
+	background-image: url("../images/welcome.jpg");
+	
+	min-height: 700px; 
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome-note {
+	position:absolute;
+	top:40%;
+	left:45%;
+	width:50em;
+	font-family: 'Tangerine', serif;
+  	font-size: 5em;
+  	text-shadow: 8px 8px 8px #aaa;
+
+}
+#about {
+	padding-top: 3em;
+}
+#about-me {
+	min-height:400px;
+	background-image: url("../images/about-me.jpg");
+
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+#about-me-header {
+	font-family: "Galada";
+	font-size: 3em;
+	float:left;
+	text-align: left;	
+	text-shadow: 8px 8px 8px #aaa;
+}
+#about-me-text {
+	
+	
+	font-family:"Cormorant Garamond";
+	margin-top:1em;
+	font-size : 0.6em;
+	text-shadow: 2px 2px 2px #aaa;
+
+	
+
+}
+#profpic {
+	float:right;
+	display:block;
+	box-shadow: 10px 10px 10px #bbb;
+}
+
+#skills {
+	background-image: url("../images/skills.png");
+	
+	min-height: 1000px; 
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skills-head {
+	font-family: "Galada";
+	font-size: 3em;
+	
+	text-align: left;	
+	text-shadow: 8px 8px 8px #aaa;
+
+
+}
+.card {
+    box-shadow:  4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   	margin-top:100px;
+   	margin-left:50px;
+
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.9);
+}
+
+#projects {
+	min-height:1500px;
+	background-image: url("../images/proj.jpg");
+
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+
+}
+#projects-head {
+	margin-top:50px;
+	margin-bottom: 100px;
+
+	font-family: "Galada";
+	font-size: 3em;
+	
+	text-align: left;	
+	text-shadow: 8px 8px 8px #aaa;
+}
+
+
+
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:25em;
+
+}
+
+.card1:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.6);
+}
+
+.container1 {
+    padding: 2px 16px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:15em;
+    height:25em;
+    margin-top: 10em;
+
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.container2 {
+    padding: 2px 16px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.open {
+	position:fixed;
+	top:0;
+	left:10px;
+	right:20px;
+	
+	color:#3f51b5;
+}
+.modal-content-custom {
+    font-family:"Cormorant Garamond";
+    font-size : 1.2em;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+#contactme {
+    min-height:800px;
+    background: url("../images/contactme.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ #contact-head {
+    margin-top:50px;
+    margin-bottom: 100px;
+
+    font-family: "Galada";
+    font-size: 3em;
+    color:#eceff1;
+    
+    text-align: left;   
+    text-shadow: 8px 8px 8px #aaa;
+ }
+
+ #contact-content {
+    font-family:"Cormorant Garamond";
+    width:500px;
+    font-size : 2em;
+    text-align: center;
+    color:#424242;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 350px;
+
+ }
+ #contact-content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+    width:1200px;
+    margin-left:0px;
+    text-shadow: 2px 2px 2px #aaa;
+
+}
+
+
+
+
+
+
+
+

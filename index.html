@@ -1,288 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Deepjyoti Mondal</title>
+  <title>Deep's Garage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    .profpic {
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Galada">
+  <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Cormorant Garamond">  
 
-      margin-right : 25px;
-      padding : 10px;
-    }
-    #roller-info{
+     
 
-      font-size: 15px
-      margin-bottom:30px;
-      padding: 0px
-      
-
-    }
-    #tip-info{
-
-      font-size: 15px
-      margin-bottom:30px;
-      padding: 20px
-      
-
-    }
-    #super-info{
-
-      font-size: 15px
-      margin-bottom:30px;
-      padding: 0px
-
-
-    }
-
-    
-    
-
-    #hello {
-
-      font-family: arial black;
-      font-style:italic;
-
-    }
-    #about{
-
-      font-size:24px;
-    }
-    #col-header{
-
-      font-family:verdana;
-      font-size:30px;
-      font-style:bold;
-      text-align: center;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-
-    #col-body{
-
-      font-family: verdana;
-      font-size: 18px;
-      text-align: center;
-    }
-    #other{
-
-      font-family: verdana;
-      font-size: 18px;
-      margin-bottom: 10px;
-      margin-left:20px;
-      padding-right:50px;
-    }
-    #otherlast{
-
-      font-family: verdana;
-      font-size: 18px;
-      margin-bottom: 100px;
-      margin-left: 20px;
-      padding-right: 50px
-    }
-    .right{
-
-      padding-right: 20px
-    }
-    
-
-
-
-    
-  </style>
+              
+        
+  
 </head>
+
 <body>
 
-<div class="jumbotron">
-  <div class="container">
-    <img src="images/profpic.jpg" class="img-rounded pull-left profpic" width="300" height = "280">
-    <h1 id="hello">
-        Hello there!!
-    </h1>
-    <div id="about">  
-      My name is Deepjyoti Mondal and I am a programmer, software developer and designer. At present I am persuing my Btech from National Institute of Technology, Durgapur. I love to read and write code. I am highly enthusiastic about learning new algorithms, programming languages and working on different platforms. I try to make my applications as simple and user friendly as possible.
-    </div>  
-  </div>
-</div>
 
-<div class="navbar navbar-inverse" >
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Welcome</a>
-    </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact me</a></li>
-       
-      </ul>
-  </div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#about-me" class="aboutme">About me</a>
+  <a href="#skills" class="skills">Skills</a>
+  <a href="#projects" class="projects">Projects</a>
+  <a href="#contactme" class="contactme">Contact me</a>
 </div>
 
 
-<div class="container">
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-  <div class="panel panel-default">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="page-header" id="col-header">
-              Code
-            </div>
-            <div id="col-body">
-              I love to code in python and java.Apart from these two some of the languages I have coded in are php,javascript and C and have worked with mysql and sqlite databases. I have also tried Django(python web framework) and C#(for game development) and wish to learn more about them.Open Source projects and programs interests me a lot and I love to read about them whenever I get time.I hope soon I will be able to contribute to the Open source community.
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="page-header" id="col-header">
-              Platforms
-            </div>
-            <div id="col-body">
-              I have worked on android platform(Eclipse and android studio).I am very much interested in game designing and development.I have used GameMaker and Unity as my game engines and javascript and C# as my scripting languages.
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="page-header" id="col-header">
-              Design
-            </div>
-            <div id="col-body" class="right">
-              I always try to keep my application's design and UI as user friendly as possible.I try to maitain simplicity in all of my projects
-            </div>
-          </div>
-
-
-        </div>
-
-        
-
-      </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="container">
-      <div class="page-header" id="col-header"> Some of my works </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="page-header" id="col-header">
-            <img src ="images/roller.png" class="img-rounded" width="160" height="170">
-              <p> Roller </p>
-          </div>
-          <div id="col-body">
-            <p>A fun game for android<p>
-            <p> <a href="#roller-info" data-toggle = "collapse" ><span class="label label-info">Know more</span></a></p>
-            <div id="roller-info" class="collapse">
-              A fun and casual game for android ,</br> Roller is developed using 
-              Unity game </br>engine and 
-              scripted with Javascript.</br>
-              Click <a href="https://play.google.com/store/apps/details?id=com.prizm.roller">here</a> to view the app on google playstore
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="page-header" id="col-header">
-            <img src="images/superfeed.png" class="img-rounded" width="160" height="170">
-              <p> Superfeed </p>
-          </div>
-          <div id="col-body">
-            <p>A RSS reader app for android<p>
-            <p> <a href="#super-info" data-toggle = "collapse" ><span class="label label-info">Know more</span></a></p>
-            <div id="super-info" class="collapse">
-              SuperFeed is a RSS reader app fro android.It displays headings from the RSS links of the user's preferred websites.Click <a href="https://play.google.com/store/apps/details?id=com.prizm.deep.superfeed">here</a> to view the app on google playstore
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="page-header" id="col-header">
-            <img src="images/tipntap.png" class="img-rounded" width="160" height="170">
-              <p> TipnTap </p>
-          </div>
-          <div id="col-body">
-            <p>A casual game for android<p>
-            <p> <a href="#tip-info" data-toggle = "collapse" ><span class="label label-info">Know more</span></a></p>
-            <div id="tip-info" class="collapse">
-              A fun and casual game for android,TipnTap is developed using 
-              Unity game engine and 
-              scripted with C#.
-              Click <a href="https://play.google.com/store/apps/details?id=com.priZm.TIPnTAP">here</a> to view the app on google playstore.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="panel panel-default">
-    <div class="container">
-      <div class="page-header" id="col-header">
-        Some of my other interests
-      </div>
-      <div class="row">
-        <div id='other'>
-          Some of my other interests include Semi-autonomous and autonomous especially vision guided robotics.I prefer working with arduino and hooking up python with it.
-        </div>
-
-      </div>
-      <div class="row">
-        <div id='otherlast'>
-          Image processing and computer vision is yet another area of my interest.I have used python PIL and SimpleCV libraries and liked them very much.
-        </div>
-
-      </div>      
-
-    </div>
-  </div>
-
-
+</script>
+<div id="main">
   
-</div>
+  <div id='welcome'>
+  	<span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">☰ Menu</span>
+
+    <div class='container'>
+      <div id="welcome-note">
+        Welcome
+      </div>
+    </div>
+  </div>
+
+  <div id="about-me" class="smooth">
+  	
+  		<div class="container" id="about">
+
+	  		<div class="row">
+	  			<div class="col-sm-8">
+	  				<div id="about-me-header">
+	  					About me
+	  					<div id="about-me-text">
+	  						Hi, I am Deepjyoti, a software developer and an enthusiastic learner.
+	  						Web and Android are my favourite platform.I am also an open source enthusiast 
+	  						and contributor.Python, java and javascript are some of my favourite languages.
+	  						I love working with python,java and javascript libraries.  
+	  					</div>
+	  				</div>
+
+	  			</div>
+	  			<div class="col-sm-4">
+	  				<div id="profpic">
+	  					<img src="images/profpic.jpg" class="img-thumbnail" width="200" height="300"/>
+	  				</div>
+	  			</div>
+	  		</div>
+  			
+  		</div>
+
+  </div>
+
+  <div id="skills" class="smooth">
+  	<div class="container">
+  		<div id="skills-head">
+  			Skills and Platforms
+  			<img src="images/android.png" class="img-rounded" width="150" height="150" />
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/android_wall.png" class="img-rounded" width="200" height="250">
+  				</div>
+  			</div>
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/php_mysql_wall.png" class="img-rounded" width="300" height="250">
+  				</div>
+  			</div>
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/django_wall.png" class="img-rounded" width="300" height="250">
+  				</div>
+  			</div>
+  			
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-3">
+  				<div class="card">
+  				  <img src="images/python_wall.png" class="img-rounded" width="300" height="250">
+  				</div>
+  			</div>
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/java_wall.png" class="img-rounded" width="300" height="200">
+  				</div>
+  			</div>
+
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/unity_wall.jpg" class="img-rounded" width="300" height="200">
+  				</div>
+  			</div>
+  			
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-4">
+  				<div class="card">
+  				  <img src="images/js_wall.png" class="img-rounded" width="300" height="200">
+  				</div>
+  			</div>
+  		</div>
+  		
+  	</div>
+  </div>
+
+  <div id="projects" class="smooth">
+  	<div class="container">
+  		<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content modal-content-custom">
+		        <div class="modal-header modal-header-custom">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title show-title"></h4>
+		        </div>
+		        <div class="modal-body show-body">
+		          <p></p>
+		        </div>
+		        <div class="modal-footer modal-footer-custom">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+  		<div id="projects-head">
+  			My projets
+  		</div>	
+	  	
+	  	<div class="row">
+	  		<div class="col-sm-6">
+           <div class="card1 roller" data-toggle="modal" data-target="#myModal">
+              <img src="images/roller.jpg" alt="Avatar" class="img-thumbnail" style="width:100%">
+              <div class="container1">
+                <h4><b>Roller</b></h4>
+                <p>An Android based fun game</p>
+              </div>
+            </div>
+
+	  			
+
+	  		</div>
+	  		<div class="col-sm-6">
+
+	  			<div class="card1 tipntap" data-toggle="modal" data-target="#myModal">
+	              <img src="images/tipntap.png" alt="Avatar" class="img-thumbnail" style="width:100%">
+	              <div class="container1">
+	                <h4><b>TIPnTAP</b></h4>
+	                <p>An Android based game of reflex</p>
+	              </div>
+	            </div>
+
+	  			
+	  			
+	  		</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="col-sm-6">
+
+	  			<div class="card1 superfeed" data-toggle="modal" data-target="#myModal">
+	              <img src="images/superfeed.png" alt="Avatar" class="img-thumbnail" style="width:100%">
+	              <div class="container1">
+	                <h4><b>SuperFeed</b></h4>
+	                <p>An android based RSS feed Reader</p>
+	              </div>
+	            </div>
+
+	  			
+	  			
+	  		</div>
+
+	  		<div class="col-sm-6">
+
+	  			<div class="card2 quick" data-toggle="modal" data-target="#myModal">
+	              <img src="images/quick.png" alt="Avatar" class="img-thumbnail" style="width:100%">
+	              <div class="container2">
+	                <h4><b>QuickWeatherView</b></h4>
+	                <p>A firefox addon to view weather 
+	                	at any given city</p>
+	              </div>
+	            </div>
+
+	  			
+	  			
+	  		</div>
+
+
+	  		
+	  	</div>
+
+	</div>  	
+
+  </div>
+  <div id="contactme" class="smooth">
+  	<div class="container">
+  		
+  		<div id="contact-head">
+  			Contact me
+  		</div>
+
+  		<div id="contact-content">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  			    	<p> Send me an email at djmdeveloper060796@gmail.com or </br> follow me at <a href="https://github.com/djmgit">Github</a> or <a href="https://www.facebook.com/deepjyoti.mondal.58"> Facebook </a></p>
+  			    </div>	
+  			</div>    
+  		</div>
+  	</div>
+  </div>
+</div> 
 
 </body>
-  
- 
+</html>
