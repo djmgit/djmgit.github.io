@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	$(".superfeed").click(function() {
 		$(".show-title").html("SuperFeed");
-		$(".show-body p").html("SuperFeed is a RSS reader app for android.It displays headings from the RSS links of the user's preferred websites.<p>Check it out at <a href='https://play.google.com/store/apps/details?id=com.prizm.deep.superfeed'>Google Playstore</a></p>");
+		$(".show-body p").html("SuperFeed is a RSS reader app fro android.It displays headings from the RSS links of the user's preferred websites.<p>Check it out at <a href='https://play.google.com/store/apps/details?id=com.prizm.deep.superfeed'>Google Playstore</a></p>");
 	});
 
 	$(".quick").click(function() {
